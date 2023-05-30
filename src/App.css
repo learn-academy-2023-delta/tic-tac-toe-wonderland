@@ -15,3 +15,39 @@
 h1{
   text-align: center;
 }
+
+.circle {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  border: 15px solid black;
+  box-sizing: border-box;
+}
+
+.cross {
+  width: 90px;
+  height: 90px;
+  position: relative;
+  transform: rotate(45deg);
+}
+
+.cross:before, .cross:after{
+  content: "";
+  position:absolute;
+  background-color: red;
+
+}
+
+.cross:before{
+  left: 50%;
+  width: 30%;
+  margin-left: -15%;
+  height: 100%;
+}
+
+.cross::after{
+  top: 50%;
+  width: 100%;
+  margin-top: -15%;
+  height: 30%;
+}
