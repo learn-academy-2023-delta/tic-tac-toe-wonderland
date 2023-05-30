@@ -10,4 +10,6 @@ const Square = (props) => {
     <div className="square" onClick = {handleClick}>{props.value}</div>
   )
 }
+
+
 export default Square
